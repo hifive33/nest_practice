@@ -1,9 +1,9 @@
 import { Controller, Get } from '@nestjs/common';
 
-@Controller('')
+@Controller()
 export class AppController {
   @Get()
   getHealthy() {
-    return 'work on';
+    return 'Hello World!';
   }
 }
