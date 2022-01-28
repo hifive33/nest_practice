@@ -33,7 +33,9 @@ export class MoviesService {
 
   create(movie: CreateMovieDto) {
     this.movies.push({
-      id: this.movies.length + 1,
+      id:
+        (this.movies.reduce((a, b) => (a > b ? a : b), new Movie()).id ?? 0) +
+        1,
       ...movie,
     });
   }
