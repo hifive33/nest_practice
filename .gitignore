@@ -1,5 +1,6 @@
 # compiled output
 /dist
+/ncc
 /node_modules
 
 # Logs
